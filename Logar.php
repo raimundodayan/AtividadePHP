@@ -16,7 +16,7 @@ $login = $_POST['Usuario'];
 $Senha = $_POST['Senha'];
 
 if($u->login($login, $Senha) == true){
-  if(isset($_SESSION['idUser'])){
+  if(isset($_SESSION['IdUser'])){
    
     header('Location: arquivo.php');
     
